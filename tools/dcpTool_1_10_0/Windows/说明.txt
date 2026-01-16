@@ -1,0 +1,15 @@
+
+1、zve10.bat 
+将 dcp 文件放到 dcp_input 文件夹中；
+执行 zve10.bat 会将 dcp 文件转化为 xml 放到 xml_output 中，再把 xml_output 中的 xml 文件再转化成 dcp 文件存到 dcp_output 文件夹中。
+
+2、pre-zve10.bat 和 pre-n-zve10.bat
+pre-zve10.bat 和 pre-n-zve10.bat 是 zve10.bat 拆开分两步执行。
+pre-zve10.bat 将 dcp 文件转化为 xml 放到 xml_output 中；
+pre-n-zve10.bat 把 xml_output 中的 xml 文件再转化成 dcp 文件存到 dcp_output 文件夹中。
+分两步的目的是有些中文乱码可以在 dcp 文件转化为 xml 后修改 xml 文件中的名字去掉乱码文字再执行 pre-n-zve10.bat。
+
+3、其他相机机型可以修改 zve10.bat 或 pre-zve10.bat 和 pre-n-zve10.bat，替换掉 ZV-E10 字符为自己的相机型号。
+
+4、dcp 存储位置
+dcp 文件存储在 C:\Users\用户名\AppData\Roaming\Adobe\CameraRaw\CameraProfiles 文件夹。

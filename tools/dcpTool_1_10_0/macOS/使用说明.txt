@@ -1,0 +1,30 @@
+这是 dcptool 的帮助信息，它列出了该工具支持的有效命令行选项。这里是每个选项的简要说明：
+
+-h：打印出帮助信息（即您提供的这段信息）。
+-c：将一个XML格式的文件编译成DCP格式的文件。
+-d：将一个DCP格式的文件反编译成XML格式的文件，这是默认选项。
+-i：将一个DCP格式的文件转换成不变形式的DCP文件。
+-u：将一个DCP格式的文件转换成未扭曲的DCP文件。
+------------------------------------------------------------------------------------------
+
+方式1:
+手动命令执行:
+/Users/yuanjun/Desktop/dcpTool转换工具/dcpTool_1_10_0/Binaries/macOS/dcpTool -d 1.dcp 1.xml
+/Users/yuanjun/Desktop/dcpTool转换工具/dcpTool_1_10_0/Binaries/macOS/dcpTool -c 1.xml 1.dcp
+
+
+方式2:
+依次执行文件: 1-dcp转xml, 2-替换机型, 3-xml转dcp
+
+
+
+方式3:
+自动执行:
+1.拷贝想要模拟机型的dcp文件到dcp_input文件夹,可以去/Library/Application Support/Adobe/CameraRaw/CameraProfiles/Camera文件夹找
+2.先进入文件夹/Users/yuanjun/Desktop/dcpTool转换工具/dcpTool_1_10_0/Binaries/macOS
+3.右键,进入终端
+4.将command命令拖到终端依次运行: dcp转xml,替换机型,xml转dcp
+5.将dcp_output的的dcp文件拷贝到/Library/Application Support/Adobe/CameraRaw/CameraProfiles 即可使用
+
+
+
